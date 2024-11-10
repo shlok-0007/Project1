@@ -11,24 +11,18 @@
      <div class="container">
          <h2>Arbitrary Dimension LDU Factorization</h2>
         <p>Enter matrix dimension (n x n):
-        <input type="number" id="dimension" value="3" min="2" max="10" onchange="createMatrixInput()" style="width: 40px;font-size: 20px;"></p>
-         <div id="matrix-input"></div>
-         <button onclick="calculateLDU()">Calculate LDU Factorization</button>
-         <div class="output" id="output"></div>
+       <input type="number" id="dimension" value="3" style="width: 40px;font-size: 20px;"></p><br>
+        <input type="number">
+        <input type="number">
+        <input type="number"><br>
+        <input type="number">
+        <input type="number">
+        <input type="number"><br>
+        <input type="number">
+        <input type="number">
+        <input type="number">
+        <button>Calculate LDU Factorization</button>
      </div>
-    <script>
-        function createMatrixInput() {
-            const n = parseInt(document.getElementById('dimension').value) || 3;
-            const matrixInputDiv = document.getElementById('matrix-input');
-            matrixInputDiv.innerHTML = '';
-            for (let i = 0; i < n; i++) {
-                for (let j = 0; j < n; j++) {
-                    matrixInputDiv.innerHTML += `<input type="number" id="a${i}${j}" value="">`;
-                }
-                matrixInputDiv.innerHTML += '<br>';
-            }
-        }
-    </script>
 </body>
 </html>
 
