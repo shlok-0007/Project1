@@ -16,6 +16,19 @@
          <button onclick="calculateLDU()">Calculate LDU Factorization</button>
          <div class="output" id="output"></div>
      </div>
+    <script>
+        function createMatrixInput() {
+            const n = parseInt(document.getElementById('dimension').value) || 3;
+            const matrixInputDiv = document.getElementById('matrix-input');
+            matrixInputDiv.innerHTML = '';
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < n; j++) {
+                    matrixInputDiv.innerHTML += `<input type="number" id="a${i}${j}" value="">`;
+                }
+                matrixInputDiv.innerHTML += '<br>';
+            }
+        }
+    </script>
 </body>
 </html>
 
