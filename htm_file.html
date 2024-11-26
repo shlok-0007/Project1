@@ -9,20 +9,13 @@
 </head>
 <body>
      <div class="container">
-         <h2>Arbitrary Dimension LDU Factorization</h2>
+        <h2>Arbitrary Dimension LDU Factorization</h2>
         <p>Enter matrix dimension (n x n):
-       <input type="number" id="dimension" value="3" style="width: 40px;font-size: 20px;"></p><br>
-        <input type="number">
-        <input type="number">
-        <input type="number"><br>
-        <input type="number">
-        <input type="number">
-        <input type="number"><br>
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <button>Calculate LDU Factorization</button>
-     </div>
+        <input type="number" id="dimension" value="3" min="2" max="10" onchange="createMatrixInput()" style="width: 40px;font-size: 20px;"></p>
+        <div id="matrix-input"></div>
+        <button onclick="calculateLDU()">Calculate LDU Factorization</button>
+        <div class="output" id="output"></div>
+    </div>
 </body>
 </html>
 
