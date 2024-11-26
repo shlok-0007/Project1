@@ -2,8 +2,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 body {
-   
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -34,7 +33,7 @@ button {
     background-color:#7AB2D3;
     border: none;
     border-radius: 10px;
-     margin-top: 3rem;
+    margin-top: 3rem;
     margin-left: 17rem;
     font-weight: 900;
 }
@@ -49,5 +48,12 @@ button:hover {
 }
 .output :hover{
     color: red;
+}
+.container h2{
+    font-size: 35px;
+}
+.container p{
+    font-weight:900;
+    font-size: larger;
 }
 
